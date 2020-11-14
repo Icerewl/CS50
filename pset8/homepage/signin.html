@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+    <title>Hobbies</title>
+    <link rel="shortcut icon" href="https://cdn2.iconfinder.com/data/icons/chat-21/512/Chat-01-512.png" />
+  </head>
+
+    <body id="bgimg">
+        <nav id="mlg" class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">
+            <img src="https://www.flaticon.com/svg/static/icons/svg/2111/2111363.svg" width="40" height="40" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">News</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="signin.html">Sign in</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">Alert</a>
+              </li>
+            </ul>
+            <button class="btn btn-outline-light my-2 my-sm-0" id="mode" onclick="day();" type="submit">DAY</button>
+            <form class="form-inline my-2 my-lg-0" action="https://google.com/search" autocomplete="off" spellcheck="false">
+              <input class="form-control mr-sm-2" id="googlesearch" name="q" type="search" placeholder="Google Search" aria-label="Search">
+              <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+
+        </nav>
+        <div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+
+<form id ="formcss">
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+  <fieldset class="form-group">
+    <div class="row">
+
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+          <label class="form-check-label" for="gridRadios1">
+            First radio
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+          <label class="form-check-label" for="gridRadios2">
+            Second radio
+          </label>
+        </div>
+        <div class="form-check disabled">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+          <label class="form-check-label" for="gridRadios3">
+            Third disabled radio
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+  <div class="form-group row">
+    <div class="col-sm-2">Checkbox</div>
+    <div class="col-sm-10">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck1">
+        <label class="form-check-label" for="gridCheck1">
+          Example checkbox
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-sm-10">
+      <button type="submit" class="btn btn-primary">Sign in</button>
+    </div>
+  </div>
+</form>
+
+  </div>
+  </div>
+  </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+        <script>
+    let counter = 0;
+    function day()
+    {
+      counter++
+        if(counter % 2 !== 0){
+
+          document.getElementById("mode").classList.remove('btn-outline-light');
+          document.getElementById("mode").classList.add('btn-outline-dark');
+          document.getElementById("mlg").classList.remove('navbar-dark');
+          document.getElementById("mlg").classList.remove('bg-dark');
+          document.getElementById("mlg").classList.add('navbar-light');
+          document.getElementById("mlg").classList.add('bg-light');
+          document.getElementById("googlesearch").style.backgroundColor = "white";
+          document.getElementById("googlesearch").style.color = "black";
+          document.getElementById("bgimg").style.backgroundImage = "url(https://img5.goodfon.com/original/1920x1080/3/e1/les-zima-priroda-sneg.jpg)";
+          document.getElementById("mode").innerHTML = "NIGHT";
+        }
+        else{
+
+                document.getElementById("mode").classList.add('btn-outline-light');
+                document.getElementById("mode").classList.remove('btn-outline-dark');
+                document.getElementById("mlg").classList.remove('navbar-light');
+                document.getElementById("mlg").classList.remove('bg-light');
+                document.getElementById("mlg").classList.add('navbar-dark');
+                document.getElementById("mlg").classList.add('bg-dark');
+                document.getElementById("googlesearch").style.backgroundColor = "#303130";
+                document.getElementById("googlesearch").style.color = "white";
+                document.getElementById("bgimg").style.backgroundImage = "url(https://img5.goodfon.com/original/1920x1080/b/12/tree-hill-silhouette-man-starry-sky-dark-purple-black-wallpa.jpg)";
+                document.getElementById("mode").innerHTML = "DAY";
+
+        }
+        }
+        </script>
+  </body>
+</html>

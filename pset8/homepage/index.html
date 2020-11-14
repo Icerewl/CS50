@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script>
+
+        </script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href="styles.css" rel="stylesheet">
+        <title>AUO</title>
+        <link rel="shortcut icon" href="https://cdn2.iconfinder.com/data/icons/chat-21/512/Chat-01-512.png" />
+    </head>
+    <body id="bgimg">
+        <nav id="mlg" class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">
+            <img src="https://www.flaticon.com/svg/static/icons/svg/2111/2111363.svg" width="40" height="40" alt="discord logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="signin.html">Sign in</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">Alert</a>
+              </li>
+
+            </ul>
+            <button class="btn btn-outline-light my-2 my-sm-0" id="mode" onclick="day();" type="submit">DAY</button>
+            <form class="form-inline my-2 my-lg-0" action="https://google.com/search" autocomplete="off" spellcheck="false">
+              <input class="form-control mr-sm-2" id="googlesearch" name="q" type="search" placeholder="Google Search" aria-label="Search">
+              <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+
+        </nav>
+        <div class="container">
+  <div class="row">
+    <div class="col-sm-10">
+
+                  <div class="jumbotron" id ="jumbotron">
+  <h1 class="display-4">Hello There!</h1>
+  <p class="lead">This is a simple project particularly designed for the Harvard's CS50</p>
+  <hr class="my-4">
+  <p>ABDULLAH UMUTCAN ORTAKCI</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" id="learnmore" href="#" role="button">Learn more</a>
+  </p>
+</div>
+
+    </div>
+
+    <div class="col-sm-2" id="right">
+              <div id ="money" class="card" style="width: 18rem;">
+          <img class="card-img-top" id="cardimg" src="https://online-learning.harvard.edu/sites/default/files/styles/header/public/course/CS50x_web_4-modified.jpg?itok=8wo8PUle" alt="Card image cap">
+          <div  class="card-body">
+            <h5 class="card-title">CS50 Introduction To Computer Science</h5>
+            <p class="card-text">If it weren't for the problem set this would be an ad for sure. </p>
+          </div>
+          <ul  class="list-group list-group-flush">
+            <li id="a" class="list-group-item">Money here</li>
+            <li id="b" class="list-group-item">Money there</li>
+            <li id="c" class="list-group-item">Money everywhere</li>
+          </ul>
+
+        </div>
+</div>
+    </div>
+  </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+        <script>
+    let counter = 0;
+    function day()
+    {
+      counter++
+        if(counter % 2 !== 0){
+
+          document.getElementById("mode").classList.remove('btn-outline-light');
+          document.getElementById("mode").classList.add('btn-outline-dark');
+          document.getElementById("mlg").classList.remove('navbar-dark');
+          document.getElementById("mlg").classList.remove('bg-dark');
+          document.getElementById("mlg").classList.add('navbar-light');
+          document.getElementById("mlg").classList.add('bg-light');
+          document.getElementById("googlesearch").style.backgroundColor = "white";
+          document.getElementById("googlesearch").style.color = "black";
+          document.getElementById("bgimg").style.backgroundImage = "url(https://img5.goodfon.com/original/1920x1080/3/e1/les-zima-priroda-sneg.jpg)";
+          document.getElementById("jumbotron").style.backgroundColor = "white";
+          document.getElementById("jumbotron").style.color = "black";
+          document.getElementById("learnmore").style.backgroundColor = "white";
+          document.getElementById("learnmore").style.color = "black";
+          document.getElementById("learnmore").style.borderColor = "black";
+          document.getElementById("money").style.backgroundColor = "white";
+          document.getElementById("money").style.color = "black";
+          document.getElementById("a").style.backgroundColor = "white";
+          document.getElementById("a").style.color = "black";
+          document.getElementById("b").style.backgroundColor = "white";
+          document.getElementById("b").style.color = "black";
+          document.getElementById("c").style.backgroundColor = "white";
+          document.getElementById("c").style.color = "black";
+          document.getElementById("cardimg").src="https://i.ibb.co/BVkjQqW/CS50x-web-4-modified.jpg"
+          document.getElementById("mode").innerHTML = "NIGHT";
+        }
+        else{
+
+                document.getElementById("mode").classList.add('btn-outline-light');
+                document.getElementById("mode").classList.remove('btn-outline-dark');
+                document.getElementById("mlg").classList.remove('navbar-light');
+                document.getElementById("mlg").classList.remove('bg-light');
+                document.getElementById("mlg").classList.add('navbar-dark');
+                document.getElementById("mlg").classList.add('bg-dark');
+                document.getElementById("googlesearch").style.backgroundColor = "#303130";
+                document.getElementById("googlesearch").style.color = "white";
+                document.getElementById("bgimg").style.backgroundImage = "url(https://img5.goodfon.com/original/1920x1080/b/12/tree-hill-silhouette-man-starry-sky-dark-purple-black-wallpa.jpg)";
+                document.getElementById("jumbotron").style.backgroundColor = "#303130";
+                document.getElementById("jumbotron").style.color = "white";
+                document.getElementById("learnmore").style.backgroundColor = "#303130";
+                document.getElementById("learnmore").style.color = "white";
+                document.getElementById("learnmore").style.borderColor = "white";
+                document.getElementById("money").style.backgroundColor = "#303130";
+                document.getElementById("money").style.color = "white";
+                document.getElementById("a").style.backgroundColor = "#303130";
+                document.getElementById("a").style.color = "white";
+                document.getElementById("b").style.backgroundColor = "#303130";
+                document.getElementById("b").style.color = "white";
+                document.getElementById("c").style.backgroundColor = "#303130";
+                document.getElementById("c").style.color = "white";
+                document.getElementById("cardimg").src="https://online-learning.harvard.edu/sites/default/files/styles/header/public/course/CS50x_web_4-modified.jpg?itok=8wo8PUle"
+                document.getElementById("mode").innerHTML = "DAY";
+
+        }
+        }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+body{
+    /*background-color: #303130;*/
+    background-image: url("https://img5.goodfon.com/original/1920x1080/b/12/tree-hill-silhouette-man-starry-sky-dark-purple-black-wallpa.jpg");
+    background-color: #cccccc;
+
+}
+
+#googlesearch{
+    background-color: #303130;
+    border-color:#303130;
+    color:#ebecf0;
+}
+#mode{
+    margin-right:20px;
+    width:75px;
+}
+#jumbotron{
+    margin-top:45px;
+    margin-right:50px;
+    background:#303130;
+    color:white;
+}
+#right{
+    margin-top:20px;
+}
+#learnmore{
+    background-color:#303130;
+    border-color:white;
+}
+
+#a{
+    background-color:#303130;
+    color:white;
+}
+#b{
+    background-color:#303130;
+    color:white;
+}
+#c{
+    background-color:#303130;
+    color:white;
+}
+#money{
+    background-color:#303130;
+    color:white;
+}
+#carouselExampleIndicators{
+    margin-top:50px;
+}
+#alert{
+    margin-right:100px;
+    width:1050px;
+}
+#formcss{
+    background-color:grey;
+    margin-top:50px;
+}
